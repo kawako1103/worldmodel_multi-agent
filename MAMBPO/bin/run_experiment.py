@@ -15,6 +15,7 @@ import logging
 from decentralizedlearning.algs.mambpo import MAMBPO
 # from gym import spaces
 from gymnasium import spaces
+from torch.utils.tensorboard import SummaryWriter
 
 def scale_action(env, agent_id, action):
     if not isinstance(env.action_space[agent_id], spaces.Discrete):
@@ -93,6 +94,8 @@ def train(env, agents, data_log, n_episodes=10000, n_steps=None, generate_val_da
     alphas = [agent.alpha for agent in trainer.agents]
     data_log.log_var("alphas", alphas)
 
+    writer = SummaryWriter(log_dir="./logs/MAMBPO")
+
     ep_generator = range(n_episodes) if n_episodes else itertools.count()
     # Start training
     for i in ep_generator:
@@ -106,6 +109,12 @@ def train(env, agents, data_log, n_episodes=10000, n_steps=None, generate_val_da
 
         # Run a single episode
         score, step, extra_data = run_episode(env, agents, render=False, store_data=True, trainer=trainer)
+
+        writer.add_scalar("Eisode Score", sum(score), i)
+        writer.add_scalar("Steps", step, i)
+
+        if i % 50 == 0:
+            writer.flush()
 
         # Do more logging
         logger.info("Score: " + str(score))
@@ -124,7 +133,9 @@ def train(env, agents, data_log, n_episodes=10000, n_steps=None, generate_val_da
             logger.info("Saving log...")
             data_log.save()
             logger.info("Saved log")
-
+            
+    writer.close()
+    
     # Save logs one last time
     logger.info("Saving log...")
     data_log.save()
