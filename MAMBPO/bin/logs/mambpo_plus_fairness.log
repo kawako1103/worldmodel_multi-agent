@@ -1,0 +1,360 @@
+INFO:root:run:0
+INFO:__main__:agent:simple_spreaddefault_mambpomambpo_plus_fairness
+INFO:root:{'hidden_dims_actor': (128, 128), 'hidden_dims_critic': (256, 256), 'hidden_dims_model': (200, 200, 200, 200), 'use_OU': False, 'gamma': 0.95, 'tau': 0.01, 'delay': 1, 'lr_actor': 0.003, 'lr_critic': 0.003, 'lr_model': 0.01, 'l2_norm': 0.001, 'step_random': 0, 'update_every_n_steps': 1, 'update_model_every_n_steps': 250, 'n_steps': 10, 'n_models': 10, 'batch_size': 256, 'weight_decay': 0.0, 'alpha': 0.1, 'f_hyst': 1.0, 'use_model': True, 'monitor_losses': True, 'use_model_stochastic': True, 'diverse': True, 'autotune': True, 'target_entropy': -2.0, 'rollout_length': 1, 'use_rollout_schedule': False, 'rollout_schedule_time': [0, 1000], 'rollout_schedule_val': [1, 10], 'real_ratio': 0.1, 'use_multistep_reg': False, 'use_degraded_sim': False, 'name': 'default_mambpo', 'use_common_actor': False, 'use_common_critic': False, 'use_stochastic_actor': True, 'use_centralized_critic': True, 'use_shared_replay_buffer': False}
+INFO:root:[inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf]
+INFO:root:episode:0
+INFO:root:Score: [np.float64(-397.3642607606793), np.float64(-397.3642607606793), np.float64(-397.3642607606793)]
+INFO:root:Saving log...
+INFO:root:Saved log
+INFO:root:episode:1
+INFO:root:Score: [np.float64(-430.5661062002745), np.float64(-430.5661062002745), np.float64(-430.5661062002745)]
+INFO:root:episode:2
+INFO:root:Score: [np.float64(-356.6581127378212), np.float64(-356.6581127378212), np.float64(-356.6581127378212)]
+INFO:root:episode:3
+INFO:root:Score: [np.float64(-454.2669312825168), np.float64(-454.2669312825168), np.float64(-454.2669312825168)]
+INFO:root:episode:4
+INFO:root:Score: [np.float64(-335.6568664760196), np.float64(-335.6568664760196), np.float64(-335.6568664760196)]
+INFO:root:episode:5
+INFO:root:Score: [np.float64(-378.10521553696776), np.float64(-378.10521553696776), np.float64(-378.10521553696776)]
+INFO:root:episode:6
+INFO:root:Score: [np.float64(-416.9701645529253), np.float64(-416.9701645529253), np.float64(-416.9701645529253)]
+INFO:root:episode:7
+INFO:root:Score: [np.float64(-299.7676969681503), np.float64(-299.7676969681503), np.float64(-299.7676969681503)]
+INFO:root:episode:8
+INFO:root:Score: [np.float64(-317.4197868359133), np.float64(-317.4197868359133), np.float64(-317.4197868359133)]
+INFO:root:episode:9
+INFO:root:Score: [np.float64(-243.29005195928318), np.float64(-243.29005195928318), np.float64(-243.29005195928318)]
+INFO:root:episode:10
+INFO:root:Score: [np.float64(-259.1582749042966), np.float64(-259.1582749042966), np.float64(-259.1582749042966)]
+INFO:root:episode:11
+INFO:root:Score: [np.float64(-410.97879370856344), np.float64(-410.97879370856344), np.float64(-410.97879370856344)]
+INFO:root:episode:12
+INFO:root:Score: [np.float64(-263.3351899204297), np.float64(-263.3351899204297), np.float64(-263.3351899204297)]
+INFO:root:episode:13
+INFO:root:Score: [np.float64(-460.32048151265764), np.float64(-460.32048151265764), np.float64(-460.32048151265764)]
+INFO:root:episode:14
+INFO:root:Score: [np.float64(-385.0771223224721), np.float64(-385.0771223224721), np.float64(-385.0771223224721)]
+INFO:root:episode:15
+INFO:root:Score: [np.float64(-296.30816986197493), np.float64(-296.30816986197493), np.float64(-296.30816986197493)]
+INFO:root:episode:16
+INFO:root:Score: [np.float64(-375.5514493623496), np.float64(-375.5514493623496), np.float64(-375.5514493623496)]
+INFO:root:episode:17
+INFO:root:Score: [np.float64(-394.1548218136779), np.float64(-394.1548218136779), np.float64(-394.1548218136779)]
+INFO:root:episode:18
+INFO:root:Score: [np.float64(-269.606157508074), np.float64(-269.606157508074), np.float64(-269.606157508074)]
+INFO:root:episode:19
+INFO:root:Score: [np.float64(-230.5389481574724), np.float64(-230.5389481574724), np.float64(-230.5389481574724)]
+INFO:root:episode:20
+INFO:root:Stopped.
+INFO:root:Score: [np.float64(-348.7209233103699), np.float64(-348.7209233103699), np.float64(-348.7209233103699)]
+INFO:root:episode:21
+INFO:root:Score: [np.float64(-422.14600602450037), np.float64(-422.14600602450037), np.float64(-422.14600602450037)]
+INFO:root:episode:22
+INFO:root:Score: [np.float64(-389.2771226722075), np.float64(-389.2771226722075), np.float64(-389.2771226722075)]
+INFO:root:episode:23
+INFO:root:Score: [np.float64(-338.52985443640165), np.float64(-338.52985443640165), np.float64(-338.52985443640165)]
+INFO:root:episode:24
+INFO:root:Score: [np.float64(-398.47994955316125), np.float64(-398.47994955316125), np.float64(-398.47994955316125)]
+INFO:root:episode:25
+INFO:root:Score: [np.float64(-254.29358106337145), np.float64(-254.29358106337145), np.float64(-254.29358106337145)]
+INFO:root:episode:26
+INFO:root:Score: [np.float64(-218.45055063982235), np.float64(-218.45055063982235), np.float64(-218.45055063982235)]
+INFO:root:episode:27
+INFO:root:Score: [np.float64(-284.48150239909756), np.float64(-284.48150239909756), np.float64(-284.48150239909756)]
+INFO:root:episode:28
+INFO:root:Score: [np.float64(-339.17477437469245), np.float64(-339.17477437469245), np.float64(-339.17477437469245)]
+INFO:root:episode:29
+INFO:root:Score: [np.float64(-245.41718902981296), np.float64(-245.41718902981296), np.float64(-245.41718902981296)]
+INFO:root:episode:30
+INFO:root:Stopped.
+INFO:root:Score: [np.float64(-484.6584526090458), np.float64(-484.6584526090458), np.float64(-484.6584526090458)]
+INFO:root:episode:31
+INFO:root:Score: [np.float64(-310.6457514793619), np.float64(-310.6457514793619), np.float64(-310.6457514793619)]
+INFO:root:episode:32
+INFO:root:Score: [np.float64(-323.5359243310214), np.float64(-323.5359243310214), np.float64(-323.5359243310214)]
+INFO:root:episode:33
+INFO:root:Score: [np.float64(-370.3042248458435), np.float64(-370.3042248458435), np.float64(-370.3042248458435)]
+INFO:root:episode:34
+INFO:root:Score: [np.float64(-291.06511854950327), np.float64(-291.06511854950327), np.float64(-291.06511854950327)]
+INFO:root:episode:35
+INFO:root:Score: [np.float64(-221.65573164666586), np.float64(-221.65573164666586), np.float64(-221.65573164666586)]
+INFO:root:episode:36
+INFO:root:Score: [np.float64(-435.29854282391256), np.float64(-435.29854282391256), np.float64(-435.29854282391256)]
+INFO:root:episode:37
+INFO:root:Score: [np.float64(-411.7033304176645), np.float64(-411.7033304176645), np.float64(-411.7033304176645)]
+INFO:root:episode:38
+INFO:root:Score: [np.float64(-316.6629906086231), np.float64(-316.6629906086231), np.float64(-316.6629906086231)]
+INFO:root:episode:39
+INFO:root:Score: [np.float64(-468.6124948047143), np.float64(-468.6124948047143), np.float64(-468.6124948047143)]
+INFO:root:episode:40
+INFO:root:Stopped.
+INFO:root:Score: [np.float64(-478.0795823878127), np.float64(-478.0795823878127), np.float64(-478.0795823878127)]
+INFO:root:episode:41
+INFO:root:Score: [np.float64(-431.30363190072075), np.float64(-431.30363190072075), np.float64(-431.30363190072075)]
+INFO:root:episode:42
+INFO:root:Score: [np.float64(-352.72109440929347), np.float64(-352.72109440929347), np.float64(-352.72109440929347)]
+INFO:root:episode:43
+INFO:root:Score: [np.float64(-384.1665174365808), np.float64(-384.1665174365808), np.float64(-384.1665174365808)]
+INFO:root:episode:44
+INFO:root:Score: [np.float64(-268.5844764492158), np.float64(-268.5844764492158), np.float64(-268.5844764492158)]
+INFO:root:episode:45
+INFO:root:Score: [np.float64(-308.8717617708441), np.float64(-308.8717617708441), np.float64(-308.8717617708441)]
+INFO:root:episode:46
+INFO:root:Score: [np.float64(-275.8197374548262), np.float64(-275.8197374548262), np.float64(-275.8197374548262)]
+INFO:root:episode:47
+INFO:root:Score: [np.float64(-320.47601201281043), np.float64(-320.47601201281043), np.float64(-320.47601201281043)]
+INFO:root:episode:48
+INFO:root:Score: [np.float64(-450.93618686831184), np.float64(-450.93618686831184), np.float64(-450.93618686831184)]
+INFO:root:episode:49
+INFO:root:Score: [np.float64(-236.26087855630806), np.float64(-236.26087855630806), np.float64(-236.26087855630806)]
+INFO:root:episode:50
+INFO:root:Stopped.
+INFO:root:Score: [np.float64(-241.3581520736748), np.float64(-241.3581520736748), np.float64(-241.3581520736748)]
+INFO:root:Saving log...
+INFO:root:Saved log
+INFO:root:episode:51
+INFO:root:Score: [np.float64(-232.91579166542445), np.float64(-232.91579166542445), np.float64(-232.91579166542445)]
+INFO:root:episode:52
+INFO:root:Score: [np.float64(-302.1742529359401), np.float64(-302.1742529359401), np.float64(-302.1742529359401)]
+INFO:root:episode:53
+INFO:root:Score: [np.float64(-661.2643645726423), np.float64(-661.2643645726423), np.float64(-661.2643645726423)]
+INFO:root:episode:54
+INFO:root:Score: [np.float64(-327.3064537196198), np.float64(-327.3064537196198), np.float64(-327.3064537196198)]
+INFO:root:episode:55
+INFO:root:Score: [np.float64(-359.0143743470024), np.float64(-359.0143743470024), np.float64(-359.0143743470024)]
+INFO:root:episode:56
+INFO:root:Score: [np.float64(-209.04515350246493), np.float64(-209.04515350246493), np.float64(-209.04515350246493)]
+INFO:root:episode:57
+INFO:root:Score: [np.float64(-357.64142164431814), np.float64(-357.64142164431814), np.float64(-357.64142164431814)]
+INFO:root:episode:58
+INFO:root:Score: [np.float64(-370.4428914880363), np.float64(-370.4428914880363), np.float64(-370.4428914880363)]
+INFO:root:episode:59
+INFO:root:Score: [np.float64(-314.9739524194956), np.float64(-314.9739524194956), np.float64(-314.9739524194956)]
+INFO:root:episode:60
+INFO:root:Stopped.
+INFO:root:Score: [np.float64(-448.8576049375904), np.float64(-448.8576049375904), np.float64(-448.8576049375904)]
+INFO:root:episode:61
+INFO:root:Score: [np.float64(-334.37899046954925), np.float64(-334.37899046954925), np.float64(-334.37899046954925)]
+INFO:root:episode:62
+INFO:root:Score: [np.float64(-393.21916086158274), np.float64(-393.21916086158274), np.float64(-393.21916086158274)]
+INFO:root:episode:63
+INFO:root:Score: [np.float64(-198.54415326361803), np.float64(-198.54415326361803), np.float64(-198.54415326361803)]
+INFO:root:episode:64
+INFO:root:Score: [np.float64(-394.2764418294833), np.float64(-394.2764418294833), np.float64(-394.2764418294833)]
+INFO:root:episode:65
+INFO:root:Score: [np.float64(-353.1162279250692), np.float64(-353.1162279250692), np.float64(-353.1162279250692)]
+INFO:root:episode:66
+INFO:root:Score: [np.float64(-325.96213980604875), np.float64(-325.96213980604875), np.float64(-325.96213980604875)]
+INFO:root:episode:67
+INFO:root:Score: [np.float64(-413.84818640176235), np.float64(-413.84818640176235), np.float64(-413.84818640176235)]
+INFO:root:episode:68
+INFO:root:Score: [np.float64(-255.83028715228562), np.float64(-255.83028715228562), np.float64(-255.83028715228562)]
+INFO:root:episode:69
+INFO:root:Score: [np.float64(-291.7720333125761), np.float64(-291.7720333125761), np.float64(-291.7720333125761)]
+INFO:root:episode:70
+INFO:root:Stopped.
+INFO:root:Score: [np.float64(-354.12265330746385), np.float64(-354.12265330746385), np.float64(-354.12265330746385)]
+INFO:root:episode:71
+INFO:root:Score: [np.float64(-209.32343594705873), np.float64(-209.32343594705873), np.float64(-209.32343594705873)]
+INFO:root:episode:72
+INFO:root:Score: [np.float64(-235.09228900049249), np.float64(-235.09228900049249), np.float64(-235.09228900049249)]
+INFO:root:episode:73
+INFO:root:Score: [np.float64(-341.3777073882681), np.float64(-341.3777073882681), np.float64(-341.3777073882681)]
+INFO:root:episode:74
+INFO:root:Score: [np.float64(-282.312633017566), np.float64(-282.312633017566), np.float64(-282.312633017566)]
+INFO:root:episode:75
+INFO:root:Score: [np.float64(-380.0526552403945), np.float64(-380.0526552403945), np.float64(-380.0526552403945)]
+INFO:root:episode:76
+INFO:root:Score: [np.float64(-281.2096920236776), np.float64(-281.2096920236776), np.float64(-281.2096920236776)]
+INFO:root:episode:77
+INFO:root:Score: [np.float64(-351.3763552638361), np.float64(-351.3763552638361), np.float64(-351.3763552638361)]
+INFO:root:episode:78
+INFO:root:Score: [np.float64(-313.65707070005635), np.float64(-313.65707070005635), np.float64(-313.65707070005635)]
+INFO:root:episode:79
+INFO:root:Score: [np.float64(-432.2384393327902), np.float64(-432.2384393327902), np.float64(-432.2384393327902)]
+INFO:root:episode:80
+INFO:root:Stopped.
+INFO:root:Score: [np.float64(-318.92985380803333), np.float64(-318.92985380803333), np.float64(-318.92985380803333)]
+INFO:root:episode:81
+INFO:root:Score: [np.float64(-447.9880051932475), np.float64(-447.9880051932475), np.float64(-447.9880051932475)]
+INFO:root:episode:82
+INFO:root:Score: [np.float64(-389.621852244833), np.float64(-389.621852244833), np.float64(-389.621852244833)]
+INFO:root:episode:83
+INFO:root:Score: [np.float64(-539.4035920928184), np.float64(-539.4035920928184), np.float64(-539.4035920928184)]
+INFO:root:episode:84
+INFO:root:Score: [np.float64(-388.70862593484605), np.float64(-388.70862593484605), np.float64(-388.70862593484605)]
+INFO:root:episode:85
+INFO:root:Score: [np.float64(-256.03832476221686), np.float64(-256.03832476221686), np.float64(-256.03832476221686)]
+INFO:root:episode:86
+INFO:root:Score: [np.float64(-460.0771309450435), np.float64(-460.0771309450435), np.float64(-460.0771309450435)]
+INFO:root:episode:87
+INFO:root:Score: [np.float64(-410.2781376920155), np.float64(-410.2781376920155), np.float64(-410.2781376920155)]
+INFO:root:episode:88
+INFO:root:Score: [np.float64(-313.40914135607943), np.float64(-313.40914135607943), np.float64(-313.40914135607943)]
+INFO:root:episode:89
+INFO:root:Score: [np.float64(-225.63552599954284), np.float64(-225.63552599954284), np.float64(-225.63552599954284)]
+INFO:root:episode:90
+INFO:root:Stopped.
+INFO:root:Score: [np.float64(-181.16093405051024), np.float64(-181.16093405051024), np.float64(-181.16093405051024)]
+INFO:root:episode:91
+INFO:root:Score: [np.float64(-317.7854123682498), np.float64(-317.7854123682498), np.float64(-317.7854123682498)]
+INFO:root:episode:92
+INFO:root:Score: [np.float64(-268.479338859977), np.float64(-268.479338859977), np.float64(-268.479338859977)]
+INFO:root:episode:93
+INFO:root:Score: [np.float64(-358.23038539849097), np.float64(-358.23038539849097), np.float64(-358.23038539849097)]
+INFO:root:episode:94
+INFO:root:Score: [np.float64(-395.88101500035947), np.float64(-395.88101500035947), np.float64(-395.88101500035947)]
+INFO:root:episode:95
+INFO:root:Score: [np.float64(-303.01642876002927), np.float64(-303.01642876002927), np.float64(-303.01642876002927)]
+INFO:root:episode:96
+INFO:root:Score: [np.float64(-204.0623254417882), np.float64(-204.0623254417882), np.float64(-204.0623254417882)]
+INFO:root:episode:97
+INFO:root:Score: [np.float64(-358.8593190683771), np.float64(-358.8593190683771), np.float64(-358.8593190683771)]
+INFO:root:episode:98
+INFO:root:Score: [np.float64(-315.93084903057775), np.float64(-315.93084903057775), np.float64(-315.93084903057775)]
+INFO:root:episode:99
+INFO:root:Score: [np.float64(-406.9630531695957), np.float64(-406.9630531695957), np.float64(-406.9630531695957)]
+INFO:root:episode:100
+INFO:root:Stopped.
+INFO:root:Score: [np.float64(-502.64905779935856), np.float64(-502.64905779935856), np.float64(-502.64905779935856)]
+INFO:root:Saving log...
+INFO:root:Saved log
+INFO:root:episode:101
+INFO:root:Score: [np.float64(-309.7105337350164), np.float64(-309.7105337350164), np.float64(-309.7105337350164)]
+INFO:root:episode:102
+INFO:root:Score: [np.float64(-227.03140616922832), np.float64(-227.03140616922832), np.float64(-227.03140616922832)]
+INFO:root:episode:103
+INFO:root:Score: [np.float64(-235.83797626903015), np.float64(-235.83797626903015), np.float64(-235.83797626903015)]
+INFO:root:episode:104
+INFO:root:Score: [np.float64(-234.8480777190817), np.float64(-234.8480777190817), np.float64(-234.8480777190817)]
+INFO:root:episode:105
+INFO:root:Score: [np.float64(-280.78780512106397), np.float64(-280.78780512106397), np.float64(-280.78780512106397)]
+INFO:root:episode:106
+INFO:root:Score: [np.float64(-203.98724874523606), np.float64(-203.98724874523606), np.float64(-203.98724874523606)]
+INFO:root:episode:107
+INFO:root:Score: [np.float64(-277.50747715774304), np.float64(-277.50747715774304), np.float64(-277.50747715774304)]
+INFO:root:episode:108
+INFO:root:Score: [np.float64(-287.0220021911118), np.float64(-287.0220021911118), np.float64(-287.0220021911118)]
+INFO:root:episode:109
+INFO:root:Score: [np.float64(-250.64452133011642), np.float64(-250.64452133011642), np.float64(-250.64452133011642)]
+INFO:root:episode:110
+INFO:root:Stopped.
+INFO:root:Score: [np.float64(-290.3449061130826), np.float64(-290.3449061130826), np.float64(-290.3449061130826)]
+INFO:root:episode:111
+INFO:root:Score: [np.float64(-244.11421585563434), np.float64(-244.11421585563434), np.float64(-244.11421585563434)]
+INFO:root:episode:112
+INFO:root:Score: [np.float64(-278.3175792033654), np.float64(-278.3175792033654), np.float64(-278.3175792033654)]
+INFO:root:episode:113
+INFO:root:Score: [np.float64(-246.8638290315091), np.float64(-246.8638290315091), np.float64(-246.8638290315091)]
+INFO:root:episode:114
+INFO:root:Score: [np.float64(-258.31727312545445), np.float64(-258.31727312545445), np.float64(-258.31727312545445)]
+INFO:root:episode:115
+INFO:root:Score: [np.float64(-307.27916237157024), np.float64(-307.27916237157024), np.float64(-307.27916237157024)]
+INFO:root:episode:116
+INFO:root:Score: [np.float64(-242.27804707587404), np.float64(-242.27804707587404), np.float64(-242.27804707587404)]
+INFO:root:episode:117
+INFO:root:Score: [np.float64(-209.5655108582815), np.float64(-209.5655108582815), np.float64(-209.5655108582815)]
+INFO:root:episode:118
+INFO:root:Score: [np.float64(-224.20090285271874), np.float64(-224.20090285271874), np.float64(-224.20090285271874)]
+INFO:root:episode:119
+INFO:root:Score: [np.float64(-183.4968332303996), np.float64(-183.4968332303996), np.float64(-183.4968332303996)]
+INFO:root:episode:120
+INFO:root:Stopped.
+INFO:root:Score: [np.float64(-323.5788811286262), np.float64(-323.5788811286262), np.float64(-323.5788811286262)]
+INFO:root:episode:121
+INFO:root:Score: [np.float64(-205.47129911809157), np.float64(-205.47129911809157), np.float64(-205.47129911809157)]
+INFO:root:episode:122
+INFO:root:Score: [np.float64(-141.01800083887352), np.float64(-141.01800083887352), np.float64(-141.01800083887352)]
+INFO:root:episode:123
+INFO:root:Score: [np.float64(-223.80148515236502), np.float64(-223.80148515236502), np.float64(-223.80148515236502)]
+INFO:root:episode:124
+INFO:root:Score: [np.float64(-180.79252335921305), np.float64(-180.79252335921305), np.float64(-180.79252335921305)]
+INFO:root:episode:125
+INFO:root:Score: [np.float64(-192.32325241492484), np.float64(-192.32325241492484), np.float64(-192.32325241492484)]
+INFO:root:episode:126
+INFO:root:Score: [np.float64(-294.09917870146074), np.float64(-294.09917870146074), np.float64(-294.09917870146074)]
+INFO:root:episode:127
+INFO:root:Score: [np.float64(-293.92991152337237), np.float64(-293.92991152337237), np.float64(-293.92991152337237)]
+INFO:root:episode:128
+INFO:root:Score: [np.float64(-314.83092319421826), np.float64(-314.83092319421826), np.float64(-314.83092319421826)]
+INFO:root:episode:129
+INFO:root:Score: [np.float64(-237.35387038598972), np.float64(-237.35387038598972), np.float64(-237.35387038598972)]
+INFO:root:episode:130
+INFO:root:Stopped.
+INFO:root:Score: [np.float64(-243.42913450437922), np.float64(-243.42913450437922), np.float64(-243.42913450437922)]
+INFO:root:episode:131
+INFO:root:Score: [np.float64(-270.30708520066935), np.float64(-270.30708520066935), np.float64(-270.30708520066935)]
+INFO:root:episode:132
+INFO:root:Score: [np.float64(-224.82544868231165), np.float64(-224.82544868231165), np.float64(-224.82544868231165)]
+INFO:root:episode:133
+INFO:root:Score: [np.float64(-237.86523112981737), np.float64(-237.86523112981737), np.float64(-237.86523112981737)]
+INFO:root:episode:134
+INFO:root:Score: [np.float64(-207.20329026518675), np.float64(-207.20329026518675), np.float64(-207.20329026518675)]
+INFO:root:episode:135
+INFO:root:Score: [np.float64(-261.41795103627567), np.float64(-261.41795103627567), np.float64(-261.41795103627567)]
+INFO:root:episode:136
+INFO:root:Score: [np.float64(-243.08526663561665), np.float64(-243.08526663561665), np.float64(-243.08526663561665)]
+INFO:root:episode:137
+INFO:root:Score: [np.float64(-241.40978362840517), np.float64(-241.40978362840517), np.float64(-241.40978362840517)]
+INFO:root:episode:138
+INFO:root:Score: [np.float64(-239.73669997124358), np.float64(-239.73669997124358), np.float64(-239.73669997124358)]
+INFO:root:episode:139
+INFO:root:Score: [np.float64(-360.07796118578085), np.float64(-360.07796118578085), np.float64(-360.07796118578085)]
+INFO:root:episode:140
+INFO:root:Stopped.
+INFO:root:Score: [np.float64(-206.96894375883443), np.float64(-206.96894375883443), np.float64(-206.96894375883443)]
+INFO:root:episode:141
+INFO:root:Score: [np.float64(-267.46657552286933), np.float64(-267.46657552286933), np.float64(-267.46657552286933)]
+INFO:root:episode:142
+INFO:root:Score: [np.float64(-235.22968326849025), np.float64(-235.22968326849025), np.float64(-235.22968326849025)]
+INFO:root:episode:143
+INFO:root:Score: [np.float64(-258.1415300721111), np.float64(-258.1415300721111), np.float64(-258.1415300721111)]
+INFO:root:episode:144
+INFO:root:Score: [np.float64(-294.94368659986776), np.float64(-294.94368659986776), np.float64(-294.94368659986776)]
+INFO:root:episode:145
+INFO:root:Score: [np.float64(-245.16921793256205), np.float64(-245.16921793256205), np.float64(-245.16921793256205)]
+INFO:root:episode:146
+INFO:root:Score: [np.float64(-232.6882370765874), np.float64(-232.6882370765874), np.float64(-232.6882370765874)]
+INFO:root:episode:147
+INFO:root:Score: [np.float64(-210.7509231490651), np.float64(-210.7509231490651), np.float64(-210.7509231490651)]
+INFO:root:episode:148
+INFO:root:Score: [np.float64(-256.21715276846425), np.float64(-256.21715276846425), np.float64(-256.21715276846425)]
+INFO:root:episode:149
+INFO:root:Score: [np.float64(-260.54365602075023), np.float64(-260.54365602075023), np.float64(-260.54365602075023)]
+INFO:root:episode:150
+INFO:root:Stopped.
+INFO:root:Score: [np.float64(-238.98541096599047), np.float64(-238.98541096599047), np.float64(-238.98541096599047)]
+INFO:root:Saving log...
+INFO:root:Saved log
+INFO:root:episode:151
+INFO:root:Score: [np.float64(-190.21218760525414), np.float64(-190.21218760525414), np.float64(-190.21218760525414)]
+INFO:root:episode:152
+INFO:root:Score: [np.float64(-241.60068498443252), np.float64(-241.60068498443252), np.float64(-241.60068498443252)]
+INFO:root:episode:153
+INFO:root:Score: [np.float64(-166.94781882912847), np.float64(-166.94781882912847), np.float64(-166.94781882912847)]
+INFO:root:episode:154
+INFO:root:Score: [np.float64(-216.37181386723907), np.float64(-216.37181386723907), np.float64(-216.37181386723907)]
+INFO:root:episode:155
+INFO:root:Score: [np.float64(-265.24310999490393), np.float64(-265.24310999490393), np.float64(-265.24310999490393)]
+INFO:root:episode:156
+INFO:root:Score: [np.float64(-272.29040829816114), np.float64(-272.29040829816114), np.float64(-272.29040829816114)]
+INFO:root:episode:157
+INFO:root:Score: [np.float64(-304.82646604060426), np.float64(-304.82646604060426), np.float64(-304.82646604060426)]
+INFO:root:episode:158
+INFO:root:Score: [np.float64(-267.34487683223415), np.float64(-267.34487683223415), np.float64(-267.34487683223415)]
+INFO:root:episode:159
+INFO:root:Score: [np.float64(-213.98877020014623), np.float64(-213.98877020014623), np.float64(-213.98877020014623)]
+INFO:root:episode:160
+INFO:root:Stopped.
+INFO:root:Score: [np.float64(-203.06430138350714), np.float64(-203.06430138350714), np.float64(-203.06430138350714)]
+INFO:root:episode:161
+INFO:root:Score: [np.float64(-341.8933351555313), np.float64(-341.8933351555313), np.float64(-341.8933351555313)]
+INFO:root:episode:162
+INFO:root:Score: [np.float64(-208.67896356101718), np.float64(-208.67896356101718), np.float64(-208.67896356101718)]
+INFO:root:episode:163
+INFO:root:Score: [np.float64(-171.40188210803007), np.float64(-171.40188210803007), np.float64(-171.40188210803007)]
+INFO:root:episode:164
+INFO:root:Score: [np.float64(-208.44737998396948), np.float64(-208.44737998396948), np.float64(-208.44737998396948)]
+INFO:root:episode:165
+INFO:root:Score: [np.float64(-175.45453616515505), np.float64(-175.45453616515505), np.float64(-175.45453616515505)]
+INFO:root:episode:166

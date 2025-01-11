@@ -1,6 +1,7 @@
 import numpy as np
 from multiagent.core import World, Agent, Landmark
 from multiagent.scenario import BaseScenario
+from statistics import mean, variance#FA-MAMBPOにつき追加
 
 
 class Scenario(BaseScenario):
@@ -8,8 +9,8 @@ class Scenario(BaseScenario):
         world = World()
         # set any world properties first
         world.dim_c = 2
-        num_agents = 3
-        num_landmarks = 3
+        num_agents = 3#3
+        num_landmarks = 3#3
         world.collaborative = True
         # add agents
         world.agents = [Agent() for i in range(num_agents)]
@@ -69,18 +70,49 @@ class Scenario(BaseScenario):
         dist_min = agent1.size + agent2.size
         return True if dist < dist_min else False
 
+    # def reward(self, agent, world):
+    #     # Agents are rewarded based on minimum agent distance to each landmark, penalized for collisions
+    #     self.n_last_collisions = 0
+    #     rew = 0
+    #     for l in world.landmarks:
+    #         dists = [np.sqrt(np.sum(np.square(a.state.p_pos - l.state.p_pos))) for a in world.agents]
+    #         rew -= min(dists)
+    #     if agent.collide:
+    #         for a in world.agents:
+    #             if self.is_collision(a, agent):
+    #                 rew -= 1
+    #                 self.n_last_collisions += 1
+    #     return rew
+
+    # [key] custom to consider "fairness" 
     def reward(self, agent, world):
         # Agents are rewarded based on minimum agent distance to each landmark, penalized for collisions
         self.n_last_collisions = 0
         rew = 0
+
+        # [key] main reward function of "simple_spread" env
+        free_agents = world.agents.copy()
+        assigned_dists_to_landmarks = []
+
         for l in world.landmarks:
-            dists = [np.sqrt(np.sum(np.square(a.state.p_pos - l.state.p_pos))) for a in world.agents]
-            rew -= min(dists)
+            # find nearst agent from the target landmark
+            dists = [np.sqrt(np.sum(np.square(fa.state.p_pos - l.state.p_pos))) for fa in free_agents]
+            rew -= min(dists) # add distance reward (negative)
+            del free_agents[dists.index(min(dists))] # remove assigned agent from free_agents
+            assigned_dists_to_landmarks.append(min(dists))
+
+        # [key] add custum reward here
+        weight_param_of_fairness_task = 2 # [key] tuning param
+        variance_of_dist = variance(assigned_dists_to_landmarks)
+        print("[INFO] variance is ", variance_of_dist)
+        rew -= weight_param_of_fairness_task * variance_of_dist
+
+        # add penalty to the collision between agents
         if agent.collide:
             for a in world.agents:
                 if self.is_collision(a, agent):
                     rew -= 1
-                    self.n_last_collisions += 1
+                    self.n_last_collisions += 1 # count up no. of collisions
         return rew
 
     def observation(self, agent, world):
